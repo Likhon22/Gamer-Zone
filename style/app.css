@@ -75,12 +75,20 @@ nav {
   .nav-title {
     margin-top: 30px;
   }
+  
 
   .nav-section ul {
-    margin-top: 12px;
+    margin-top: 30px;
     flex-direction: column;
     width: 100%;
-    gap: 15px;
+    gap: 25px;
+    
+  }
+  .follow{
+    margin-top: 30px;
+  }
+  .nav-section{
+    margin-right: 150px;
   }
 }
 /* responsive   for 576-992px pad*/
