@@ -1,3 +1,6 @@
+* {
+  margin: 0px;
+}
 header {
   background: #fff;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
@@ -5,8 +8,9 @@ header {
 nav {
   display: flex;
   justify-content: space-around;
-  max-height: 130px;
+
   align-items: center;
+  padding: 30px;
 }
 .nav-title {
   display: flex;
@@ -59,6 +63,29 @@ nav {
 
 .media-icon {
   width: 30px;
-  height: 24px;
+  height: 27px;
   margin-left: 15px;
+}
+/* responsive   for 576px phone */
+@media screen and (max-width: 576px) {
+  /*   responsive nav */
+  nav {
+    flex-direction: column;
+
+    padding: 50px;
+  }
+  .nav-title {
+    margin-top: 30px;
+  }
+  }
+
+  .nav-section ul {
+    margin-top: 12px;
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+
+/* responsive   for 576-992px pad*/
+@media screen and (min-width: 576px) and (max-width: 992px) {
 }
