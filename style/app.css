@@ -121,6 +121,7 @@ nav {
   border-radius: 48px;
   background: #ff42a5;
   border: none;
+  color: #fff;
 }
 .rough-button {
   padding: 21px 40px;
@@ -128,6 +129,90 @@ nav {
   background: #4ec5f7;
   border: none;
   margin-left: 10px;
+}
+.know {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-around;
+}
+.know-img {
+  max-width: 868px;
+}
+.know-img img {
+  width: 100%;
+}
+
+.know-content h2 {
+  font-size: 3rem;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: right;
+  margin-bottom: 20px;
+}
+.know-description {
+  width: 520px;
+  color: #534c64;
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.purpose-heading {
+  color: #534c64;
+  text-align: right;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+.purpose-content {
+  color: #534c64;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-align: right;
+  margin: 10px 0px;
+}
+.know-content button {
+  display: flex;
+
+  margin: 20px 0px;
+  margin-left: 370px;
+  text-transform: uppercase;
+}
+.funny-video-title {
+  margin-top: 30px;
+  text-align: center;
+  align-items: center;
+}
+.funny-video-title h3 {
+  color: #0b0223;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.funny-video-title span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.funny-video-title p {
+  color: #534c64;
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin: 10px;
+}
+.funny-video-img-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+.funny-video-img-container p {
+   color: #534c64;
+  font-size: 1rem;
+  font-weight: 400;
+  width: 340px;
+  text-align: center;
 }
 /* responsive   for 576px phone */
 @media screen and (max-width: 576px) {
@@ -169,11 +254,9 @@ nav {
   .feature-title {
     width: 80%;
     margin: 20px auto;
-   
-   
   }
   .feature-heading {
-    margin: 20px ;
+    margin: 20px;
   }
   .feature-content {
     margin: 20px;
@@ -181,23 +264,62 @@ nav {
   .feature-button {
     margin: 20px;
   }
-  .feature-heading h1{
+  .feature-heading h1 {
     font-size: 2.8rem;
   }
-  .feature-heading h3{
+  .feature-heading h3 {
     font-size: 1.5rem;
   }
-  .feature-button{
+  .feature-button {
     display: flex;
     flex-direction: row;
-   margin-top: 30px;
-   
+    margin-top: 30px;
+
     gap: 10px;
   }
-  .feature-button button{
+  .feature-button button {
     font-size: 1rem;
-     border-radius: 20px;
-     padding:20px 25px;
+    border-radius: 20px;
+    padding: 20px 25px;
+  }
+  .funny-video-title h3 {
+    display: inline;
+    font-size: 1.8rem;
+  }
+
+  /* know section */
+  .know {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    margin-bottom: 20px;
+  }
+  .know-content h2,
+  .purpose-heading,
+  .purpose-content,
+  .know-content button,
+  .know-description {
+    text-align: center;
+    margin: 10px;
+  }
+  .know-description {
+    width: 90%;
+  }
+  .know-content button {
+    margin: 20px auto;
+    padding: 20px 25px;
+  }
+  /* funny-video-games */
+  .funny-video-img-container{
+    flex-direction: column;
+    margin: 30px auto;
+    align-items: center;
+    gap: 20px;
+  }
+  .funny-video-title p {
+    font-size: 1rem;
   }
 }
 /* responsive   for 576-992px pad*/
